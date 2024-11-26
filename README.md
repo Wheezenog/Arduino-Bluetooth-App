@@ -73,8 +73,8 @@ A simple app built with Flutter to control an Arduino via Bluetooth using the HC
    You can program the Arduino to turn on either an external LED or the built-in LED upon receiving specific data from the Bluetooth module.  
    - The built-in LED can be accessed using `LED_BUILTIN`.
 
-   > [!WARNING] 
-   > Avoid sending strings as data, as this can cause significant delays between sending the input and receiving the response. It's best to use `int` or `char` types instead.
+> [!WARNING] 
+> Avoid sending strings as data, as this can cause significant delays between sending the input and receiving the response. It's best to use `int` or `char` types instead.
 
 For further details on getting started with Arduino, visit the official [Arduino Documentation](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/).
 
@@ -85,14 +85,14 @@ For further details on getting started with Arduino, visit the official [Arduino
 1. **Bluetooth Integration with Flutter**  
    Use the [bluetooth_classic package](https://pub.dev/packages/bluetooth_classic) to integrate Bluetooth functionality into your Flutter app. You can refer to the example code provided with the package to understand how to use it.
 
-   > [!TIP] 
-   > Make sure that you only include one instance of the `bluetooth_classic` package in your project. You can use commands like `BluetoothClassic.connect()` and `BluetoothClassic.write()` to interact with the Bluetooth device.
+> [!TIP] 
+> Make sure that you only include one instance of the `bluetooth_classic` package in your project. You can use commands like `BluetoothClassic.connect()` and `BluetoothClassic.write()` to interact with the Bluetooth device.
 
 2. **Create a Device List Page**  
    - Build a page in your app that displays a list of all Bluetooth devices that have been paired with your phone or tablet.
    
-   > [!NOTE] 
-   > Ensure that the Bluetooth device is paired through your phone or tablet’s Bluetooth settings, not through the app.
+> [!NOTE] 
+> Ensure that the Bluetooth device is paired through your phone or tablet’s Bluetooth settings, not through the app.
 
 3. **Device Connection Button**  
    - Each paired Bluetooth device should be shown as a button. When clicked, the button should establish a connection with the corresponding Bluetooth device.
@@ -101,8 +101,8 @@ For further details on getting started with Arduino, visit the official [Arduino
    - Create a separate page with two buttons: one for turning the LED on and the other for turning it off.
    - If a Bluetooth device is connected, these buttons should send a character or integer to the device, triggering the corresponding action on the Arduino.
 
-   >  [!TIP]
-   > Ensure that the data sent matches the expected input format on the Arduino (e.g., `char` or `int`).
+>  [!TIP]
+> Ensure that the data sent matches the expected input format on the Arduino (e.g., `char` or `int`).
 
 ---
 
