@@ -18,7 +18,8 @@ A simple app made with flutter to control an arduino via Bluetooth
 > [!WARNING]
 > Do not send strings as data or there will be a huge delay between when you send the input and when something happens. Use `int` or `char` instead.
         
-For information on getting started with Arduino development, please reference their documentation (arduino docs)[https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/].
+For information on getting started with Arduino development, please reference their documentation: [arduino docs](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/).
+
 
 ## Instructions for app development:
 For app development with Flutter, use this package: [pub.dev](https://pub.dev/packages/bluetooth_classic). 
@@ -47,5 +48,5 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-For help with Arduino development, refer to their documentation (Arduino docs)[https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/]. 
+For help with Arduino development, refer to their documentation [Arduino docs](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/). 
 This will help you get started with sketches and all the basics of developing with their Arduino IDE.
